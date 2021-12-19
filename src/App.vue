@@ -1,11 +1,23 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
     <router-link to="/pageone">page1</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/pagetwo">page2</router-link>
   </div>
   <router-view/>
 </template>
+
+<script lang="ts">
+import { defineComponent, reactive, provide } from 'vue'
+import { MessageItem } from '@/types/messageitem'
+
+export default defineComponent({
+  setup(){
+    const message: MessageItem[] = reactive([])
+    provide('message', message)
+  }
+})
+
+</script>
 
 <style>
 #app {

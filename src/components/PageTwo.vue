@@ -16,7 +16,7 @@ export default defineComponent({
     MessageAdd
   },
   setup () {
-    const pageName = 'PageOne'
+    const pageName = 'PageTwo'
 
     return {
       pageName

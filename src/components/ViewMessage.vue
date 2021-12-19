@@ -17,6 +17,7 @@ import { MessageItem } from '@/types/messageitem'
 export default defineComponent({
   setup () {
     const message = inject('message') as MessageItem[]
+    
     return {
       message
     }
